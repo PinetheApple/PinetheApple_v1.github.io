@@ -1,0 +1,65 @@
+body{
+    background: url("../images/pineappleinspace.jpg");
+    background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    font-family: 'Abel', sans-serif;
+        
+}
+
+#container{
+    color: rgb(14,36,48);
+    width: 650px;
+    height: 630px;
+    padding-left: 15px;
+    background-color:rgb(252,58,81);
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+img{
+    border-radius: 30%;
+}
+
+h1{
+    position: relative;
+    background-position: center;
+    text-align: center;
+    
+    font-size: 50px;
+    font-family: 'Noto Serif', serif;
+}
+
+#embedpart{
+    color: rgb(14,36,48);
+    width: 600px;
+    height: 400px;
+    padding-left: 15px;
+    background-color:rgb(245,179,73);
+    border-radius: 20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 27px;
+}
+
+h3{
+    font-size: 23px;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    margin-right: 70px;
+    text-decoration: none;
+    color: rgb(232,213,185);
+    font-size: 20px;
+}

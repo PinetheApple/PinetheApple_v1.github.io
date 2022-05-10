@@ -1,0 +1,20 @@
+#container{
+    width: 100%;
+    margin:0;
+    padding:0.5rem 0 0 0;
+    border-radius: 0;
+}
+#embedpart{
+    width: 100%;
+    margin:0;
+    padding: 0.5rem 0 0 0;
+    border-radius: 0;
+}
+img{
+    padding: 0.5rem 0 0 0;
+    border-radius: 30%;
+}
+iframe{
+    width: 100%;
+    margin:0;
+}
