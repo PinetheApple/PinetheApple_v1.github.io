@@ -1,22 +1,49 @@
 body{
-    background-color: rgb(35, 21, 63);
+    background-color: #170d2b; /*contrast- #212B0D*/
+    font-family: 'Roboto Mono', monospace;
+    color: #95CDD2;
 }
-h1{
-    color: rgba(158, 223, 228, 0.87);
-}
-div{
-    height: 700px;
-    background-color: rgb(44, 33, 65);
+.main,.menu{
+    height: 7000px;
+    background-color: #2C1952;
     text-align: center;
     margin: auto;
     width:58%;
     min-width: 650px;
 }
 nav{
-    background-color: rgba(0, 0, 0, 0.027);
-    text-align: center;
     margin: auto;
-    width:58%;
+    width:100%;
     min-width: 650px;
-    height: 5rem;
+    height: 6rem;
+    font-size: bold;
+}
+.menu h1{
+    float:left;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+ * Menu styles
+ */
+
+.menu img{
+    float:left;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+}
+
+.menu a{
+    float:right;
+    margin: 2.5rem 2rem;
 }
