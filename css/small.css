@@ -1,5 +1,13 @@
-div,nav{
+.main{
     width:100%;
     min-width: 0;
+}
+
+/*
+ *  menu styles
+ */
+
+.menu a{ 
+    display: none;
 }
 
