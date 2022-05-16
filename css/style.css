@@ -22,6 +22,11 @@ body{
 a{
     text-decoration: none;
     color: inherit;
+    font-weight: 700;
+}
+
+a:hover{
+    color: #5a7b7e;
 }
 
 /*
@@ -54,16 +59,21 @@ a{
 
 .footer{
     background: inherit;
-    border-top: 0.005rem solid #95CDD2;
-    border-bottom: none;
-    height: 100px;
-    
+    height: 11.25rem;
 }
+
+.footer img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
 
 /*
  *  info styles
  */
 
  .info{
-     height: 425.25rem;
+     height: 420.25rem;
  }
