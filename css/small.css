@@ -7,7 +7,15 @@
  *  menu styles
  */
 
-.menu a{ 
+.menu .nav{ 
+    display: none;
+}
+
+/*
+ *  sidebar styles
+ */
+
+.util{
     display: none;
 }
 
