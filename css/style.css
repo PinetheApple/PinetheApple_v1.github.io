@@ -44,12 +44,18 @@ a:hover{
     margin: 1rem;
 }
 
-.menu .nav{
+.menu nav{
     width: 30rem;
     display: flex;
     float:right;
     justify-content: space-between;
     padding: 2.5rem 2rem;
+    flex-direction: row-reverse;
+}
+
+.menu nav a{
+    display:block;
+    font-size: 1.1rem;
 }
 
 /*
