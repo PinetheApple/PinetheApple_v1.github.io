@@ -19,7 +19,7 @@ body{
     text-align: center;
     margin: auto;
     width:58%;
-    min-width: 700px;
+    min-width: 750px;
     max-width: 1200px;
 }
 
@@ -39,32 +39,52 @@ a:hover{
     color: var(--color4);
 }
 
+li{
+    list-style: none;
+}
+
+.button{
+    padding: 1rem;
+    background: var(--color4);
+    border-radius: 0.5rem;
+    color: var(--body-bg);
+}
+
+.button:hover, .button:focus{
+    background-color: #80b3b8;
+}
+
+.button a:hover, .button a:focus{
+    color: inherit;
+}
+
 /*
  * Menu styles
  */
 
 .menu{
     border-bottom: 0.005rem solid var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .menu a i{
-    float:left;
-    margin: 1rem;
+    margin: 1.5rem;
     color: var(--main-bg);
     background-color: var(--color1);
     padding: 0.7rem 1rem;
 }
 
-.menu nav{
-    width: 30rem;
+.menu nav ul{
+    gap: 2rem;
     display: flex;
-    float:right;
-    justify-content: space-between;
-    padding: 2.5rem 2rem;
     flex-direction: row-reverse;
+    align-items: center;
+    margin: auto 2rem;
 }
 
-.menu nav a{
+.menu nav ul li a{
     display:block;
     font-size: 1.1rem;
 }
@@ -96,7 +116,7 @@ a:hover{
  *  info styles
  */
 
- .info{
+.info{
      height: 420.25rem;
  }
 
@@ -108,3 +128,18 @@ a:hover{
     background-color: var(--color3);
     color: var(--body-bg)
 }
+
+/*
+ *  sr-only
+ */
+
+ .sr-only{
+     position: absolute;
+     margin: -1px;
+     padding: 0;
+     overflow: hidden;
+     height: 1px;
+     width: 1px;
+     clip: (0,0,0,0);
+     border: 0;
+ }
