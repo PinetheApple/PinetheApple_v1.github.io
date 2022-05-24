@@ -111,6 +111,16 @@ li{
 .details p{
     margin: 0.5rem 0.5rem 0 0.5rem;
 }
+
+.details a p{
+    display: inline-block;
+    height: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.details small{
+    display: block;
+}
 /*
  *  info styles
  */
