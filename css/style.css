@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap'); /* font-family: 'Work Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
 :root{
     --body-bg: #120640;/*#170d2b; */
     --main-bg: #110752;/*#382f74 #2C1952;*/ 
@@ -52,11 +55,25 @@ li{
 
 .button:hover, .button:focus{
     background-color: #80b3b8;
+    color: var(--main-bg);
 }
 
-.button a:hover, .button a:focus{
-    color: inherit;
+.gradient{
+    height: .2rem;
 }
+
+.c1{
+    background: linear-gradient(90deg, rgba(177,80,242,1) 0%, rgba(149,205,210,1) 100%);
+}
+
+.c2{
+    background: linear-gradient(270deg, rgba(177,80,242,1) 0%, rgba(149,205,210,1) 100%);
+}
+
+.hide{
+    display: none;
+}
+
 
 /*
  * Menu styles
@@ -126,16 +143,25 @@ li{
  */
 
 .info{
-     height: auto;
+    height: auto;
  }
 
 /*     
  *  section styles
  */
 
-.info section:nth-child(2n){
+.info section h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.1rem;
+}
+
+.info .diffcolor{
     background-color: var(--color3);
-    color: var(--body-bg)
+    color: var(--body-bg);
+}
+
+.info p{
+    font-size: 1.2rem;
 }
 
 /*  
@@ -151,7 +177,9 @@ li{
  *  projects styles
  */
 
-
+#projects{
+    padding: 2rem 2rem 3rem 2rem;
+}
 
 /*  
  *  courses styles
@@ -163,7 +191,18 @@ li{
  *  Contact styles
  */
 
+#contact{
+    padding: 2rem 2rem 3rem 2rem;
+    line-height: 2;
+}
 
+#contact h2{
+    margin: 0;
+}
+
+#contact .button{
+    border: 0.1rem solid var(--color2);
+}
 
 /*
  *  sr-only
