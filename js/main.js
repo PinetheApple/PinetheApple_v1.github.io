@@ -1,3 +1,3 @@
 document.querySelector('.ham').addEventListener('click', function(e){ 
-    alert('Clicked')
+    alert('drop down coming soon 🙏')
 });
