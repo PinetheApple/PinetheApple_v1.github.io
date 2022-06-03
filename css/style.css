@@ -150,7 +150,7 @@ li{
  *  section styles
  */
 
-.info section h2{
+.info section h2, #intro span{
     font-family: 'Work Sans', sans-serif;
     font-size: 2.1rem;
 }
@@ -173,12 +173,49 @@ li{
     padding: 3rem 2rem 0 2rem;
 }
 
+#intro span{
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
 /*  
  *  projects styles
  */
 
 #projects{
-    padding: 2rem 2rem 3rem 2rem;
+    padding: 2rem 1rem 3rem 1rem;
+}
+
+.proj-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.proj-div div{
+    background-color: var(--body-bg);
+    color: var(--color1);
+    padding: 2rem;
+    border-radius: 5%;
+    width: 15rem;
+    position: relative;
+}
+
+.proj-div p{
+    color: #c180ec;
+}
+
+.proj-div div div{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin:0;
+    padding: 0 0 0.5rem ;
 }
 
 /*  
@@ -205,16 +242,74 @@ li{
 }
 
 /*
+ * about-styles
+ */
+
+#About h1{
+    font-size: 2.1rem;
+    font-family: 'Work Sans', sans-serif;
+    margin: 3rem;
+}
+
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me img{
+    border-radius: 50%;
+    height: 17rem;
+    width: 17rem;
+    margin: 3rem;
+}
+
+.about-me section{
+    font-size: 1.5em;
+    display: inline-block;
+    width: 50%;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+/*
  *  sr-only
  */
 
- .sr-only{
-     position: absolute;
-     margin: -1px;
-     padding: 0;
-     overflow: hidden;
-     height: 1px;
-     width: 1px;
-     clip: (0,0,0,0);
-     border: 0;
- }
+.sr-only{
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    clip: (0,0,0,0);
+    border: 0;
+}
+
+/*for tiny screens*/
+
+@media (max-width: 280px) {
+    #projects{
+        padding:0;
+    }
+
+    .proj-div div{
+        border-radius: 0;
+    }
+}
+
+/* about-me page responsive stuff*/
+
+@media (max-width: 1489px) {
+    .about-me img{
+        width: 12rem;
+        height: 12rem;
+        margin:1rem;
+    }
+
+    .about-me section{
+        width: 80%;
+    }
+}
