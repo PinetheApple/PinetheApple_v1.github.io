@@ -17,15 +17,7 @@
  *  menu styles
  */
 
-.menu nav{ 
-    display: none;
-}
-
-/*
- *  sidebar styles
- */
-
-.util{
+.dropdown{ 
     display: none;
 }
 
@@ -40,4 +32,23 @@
 
 .ham:hover{
     color: var(--color5);
+}
+
+/*
+ * for drop-down menu
+ */
+
+.drop{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-bg);
+    margin: 0;
+    padding: 2rem 0;
+    gap: 2rem;
+    top: 7.41rem;
+    left: 0;
 }
