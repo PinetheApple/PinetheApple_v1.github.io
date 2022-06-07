@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
 :root{
-    --body-bg: #120640;/*#170d2b; */
-    --main-bg: #110752;/*#382f74 #2C1952;*/ 
-    --color1: #B150F2;/*95CDD2 #8487BF;*/
-    --color2: #514BF2; /* #A6A6A6*/
-    --color3: #F2784B; /* #00010D*/
+    --body-bg: #25064D;
+    --main-bg: #36175E;
+    --color1: #9768D1;
+    --color2: #7B52AB;
+    --color3: #553285;
     --color4: #95CDD2;
 }
 
@@ -63,11 +63,11 @@ li{
 }
 
 .c1{
-    background: linear-gradient(90deg, rgba(177,80,242,1) 0%, rgba(149,205,210,1) 100%);
+    background: linear-gradient(90deg, var(--color1) 0%, var(--color2) 100%);
 }
 
 .c2{
-    background: linear-gradient(270deg, rgba(177,80,242,1) 0%, rgba(149,205,210,1) 100%);
+    background: linear-gradient(270deg, var(--color1) 0%, var(--color2) 100%);
 }
 
 .hide{
