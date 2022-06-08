@@ -260,7 +260,10 @@ li{
     margin: 0;
 }
 
-
+#contact p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 
 /*
  * about-styles
